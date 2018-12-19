@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style></style>
+  <body>
+    <div class="mainDiv">
+      <div class="profile">
+        <img class="logo" src="img/logo.png" />
+
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span> <span></span> <span></span>
+
+            <ul id="menu">
+              <a href="index.html"><li>Home</li></a>
+              <a href="planify.html"><li>Plantify</li></a>
+              <a href="donate.html"><li>Donate</li></a>
+              <a href="#"><li>Volunteers</li></a>
+              <a href="#"><li>Social Media</li></a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="grid-contier">
+        <div class="user-continer-number">
+          <!-- style="width:80% ; height: 80%" -->
+          <h3 class="user-text">Total Users</h3>
+          <h1
+            style="float: right; margin-right: 200px; margin-top: -20px"
+            class="user_number"
+          >
+            3
+          </h1>
+
+          <img
+            src="img/user_icon_2.png"
+            width="40px"
+            height="40px"
+            style="float: left;  margin-top: -10px "
+          />
+        </div>
+        <div class="chart-container_1" style="width:80% ; height: 80%">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="chart-container_2" style="width:80% ; height: 80%">
+          <canvas id="pieChart"></canvas>
+        </div>
+
+        <div class="chart-container_line" style="width:80% ; height: 80%">
+          <canvas id="lineChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+    <script src="script.js"></script>
+    <script></script>
+  </body>
+</html>

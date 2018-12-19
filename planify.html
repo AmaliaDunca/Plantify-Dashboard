@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .radar_continer {
+      padding: 20px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 0.7);
+      box-shadow: 0px 0px 50px -6px #787878;
+      margin: 0px 10px;
+      max-width: 90%;
+    }
+    .mainDiv {
+      min-height: 100vh;
+      min-width: 100vw;
+    }
+  </style>
+  <body>
+    <div class="mainDiv">
+      <div class="profile">
+        <img class="logo" src="img/logo.png" />
+
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span> <span></span> <span></span>
+
+            <ul id="menu">
+              <a href="index.html"><li>Home</li></a>
+              <a href="planify.html"><li>Plantify</li></a>
+              <a href="donate.html"><li>Donate</li></a>
+              <a href="#"><li>Volunteers</li></a>
+              <a href="#"><li>Social Media</li></a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="radar_continer"><canvas id="radarChart"></canvas></div>
+    </div>
+
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+    <script src="radar.js"></script>
+  </body>
+</html>
